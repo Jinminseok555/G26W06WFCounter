@@ -8,8 +8,14 @@ namespace G26W06WFCounter {
 
         private void OnAdd(object sender, EventArgs e) {
             labelCount.Text = $"{++count}";
-            //labelCount.Text = (++count).ToString();
-            //labelCount.Text = "" + ++count;
+        }
+        private void OnReset(object sender, EventArgs e) {
+            count = 0;
+            labelCount.Text = $"{count}";
+        }
+
+        private void OnSub(object sender, EventArgs e) {
+            labelCount.Text = $"{--count}";
         }
         private void Form1_Load(object sender, EventArgs e) {
 

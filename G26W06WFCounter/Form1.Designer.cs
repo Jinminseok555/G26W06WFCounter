@@ -29,6 +29,8 @@
         private void InitializeComponent() {
             labelCount = new Label();
             btnAdd = new Button();
+            btnSub = new Button();
+            btnReset = new Button();
             SuspendLayout();
             // 
             // labelCount
@@ -45,23 +47,45 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(86, 148);
-            btnAdd.Margin = new Padding(2, 2, 2, 2);
+            btnAdd.Location = new Point(7, 133);
+            btnAdd.Margin = new Padding(2);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(76, 20);
+            btnAdd.Size = new Size(128, 30);
             btnAdd.TabIndex = 1;
             btnAdd.Text = "증가";
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += OnAdd;
+            // 
+            // btnSub
+            // 
+            btnSub.Location = new Point(136, 133);
+            btnSub.Name = "btnSub";
+            btnSub.Size = new Size(128, 30);
+            btnSub.TabIndex = 2;
+            btnSub.Text = "감소";
+            btnSub.UseVisualStyleBackColor = true;
+            btnSub.Click += OnSub;
+            // 
+            // btnReset
+            // 
+            btnReset.Location = new Point(7, 164);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(257, 30);
+            btnReset.TabIndex = 3;
+            btnReset.Text = "초기화";
+            btnReset.UseVisualStyleBackColor = true;
+            btnReset.Click += OnReset;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(326, 220);
+            Controls.Add(btnReset);
+            Controls.Add(btnSub);
             Controls.Add(btnAdd);
             Controls.Add(labelCount);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "카운터";
             Load += Form1_Load;
@@ -72,5 +96,7 @@
 
         private Label labelCount;
         private Button btnAdd;
+        private Button btnSub;
+        private Button btnReset;
     }
 }

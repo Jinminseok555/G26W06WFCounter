@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("G26W06WFCounter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e59676af7141d748922de1491e11d9be4b1bc673")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8522b631e0fce91073ca1219550952b41a907096")]
 [assembly: System.Reflection.AssemblyProductAttribute("G26W06WFCounter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("G26W06WFCounter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
